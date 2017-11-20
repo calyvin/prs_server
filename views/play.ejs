@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Play Paper, Rock, Scissors</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="header">
+     <table>
+     <tr>
+     <td><a href="/">HOME</a></td>
+     <td><a href="/about">ABOUT</a></td>
+     </tr>
+     </table>
+    </div><!-- Header -->
+    <div class="beginning_div">
+        <h1>It's time to play Paper, Rock, Scissors!</h1>
+        <h2><span id = "name"><%=game.p_name%></span>, you are playing as <span id = "player"><%=game.p_character%></span></h2>
+        <h3>Your opponent will be <span id = "opponent"><%=game.opponent%></span></h3>
+        <span id="weapon_prompt">Choose your weapon:</span>
+        <select id="weapon_input">
+          <option value="paper">paper</option>
+          <option value="rock">rock</option>
+          <option value="scissors">scissors</option>
+        </select>
+        <br>
+        <button type="button" id="shoot_button">Shoot!</button>
+        <span id ="cpu_weapon"></span>
+        <br>
+        <span id = "graphics"></span>
+        <span id ="outcome"></span>        
+        <br>
+        <button type="button" class="invisible" id="play_button">Play Again?!</button>
+    </div><!-- Main content --> 
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

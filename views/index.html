@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Welcome to Paper, Rock, Scissors</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="header">
+     <table>
+     <tr>
+     <td><a href="/">HOME</a></td>
+     <td><a href="/about">ABOUT</a></td>
+     </tr>
+     </table>
+    </div><!-- Header -->
+    <div class="beginning_div">
+        <h1>Welcome to Paper, Rock, Scissors Showdown!</h1>
+        <form action="/play" method="get">
+        <span id="name_prompt">Enter your name:</span> 
+        <input type="text" id="name_input" name="name_input"> 
+        <br>
+        <span id="character_prompt">Choose your character:</span> 
+        <select name="character">
+          <option value="bones">Bones</option>
+          <option value="boss">Boss</option>
+          <option value="hairy">Hairy</option>
+          <option value="magic">Magic</option>
+          <option value="mickey">Mickey</option>
+          <option value="modern">Modern</option>
+          <option value="pixel">Pixel</option>
+        </select>
+        <br>
+        <input type="submit" value="Play P, R, S">
+        </form>
+        <br>
+    </div><!-- Main content --> 
+
+</body>
+
+</html>
